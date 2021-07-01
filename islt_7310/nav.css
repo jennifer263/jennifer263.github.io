@@ -1,9 +1,16 @@
 ul {
    background-color: maroon;
    color: white;
-   list-style: none;
+   list-style: none; /*remove bullets from all ul elements*/
    text-align:center;
-   padding: 20px 0 20px 0;
+   position: relative;
+   justify-content: space-around;
+   font-family: sans-serif;
+   height: 60px;
+   display:flex;
+
+
+  
 }
 ul li {
     display: inline-block;
@@ -11,8 +18,32 @@ ul li {
     text-decoration: none;
     font-weight: bold;
     color: white;
+    position: relative;
+    font-size: 20px;
 }
 ul li a {
     text-decoration: none;
     color: white;
 }
+
+ul ul {
+    display: none;/*does not display submenu until hover*/
+    position:absolute;
+    top: 100%;/*positions submenu at bottom of main menu*/
+    width: 150px;
+    height: 70px;
+    text-align: left;
+    padding-top: 10px;
+    background-color: silver;
+}
+
+ul ul li {float:none}/*display submenu vertically*/
+ul li:hover > ul {
+    display:block;/*display submenu on hover of li element*/
+}
+> ul::after {
+    content: "";
+    display:block;
+    clear:both;
+}
+

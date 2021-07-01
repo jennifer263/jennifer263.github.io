@@ -1,8 +1,8 @@
-#nav_menu ul { list-style-type: none;}
-#nav_menu ul li { float:left; }
-#nav_menu ul li a {
+ul li{
+    list-style-type: none;
+    float:left;
     text-align: center;
-    display: block;
+    display: inline-block;
     width: 175px;
     padding 2em 0;
     text-decoration: none;
@@ -11,5 +11,3 @@
     font-weight: bold;
     border-right: solid white;
 }
-#nav_menu ul li a.lastitem { border-right: none;}
-#nav_menu ul li a current {color: yellow; }

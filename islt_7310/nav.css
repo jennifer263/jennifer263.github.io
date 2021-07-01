@@ -12,7 +12,7 @@ ul li {
     font-weight: bold;
     color: white;
 }
-ul li > a {
+ul li a {
     text-decoration: none;
     color: white;
 }

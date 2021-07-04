@@ -41,7 +41,7 @@ ul ul li {float:none}/*display submenu vertically*/
 ul li:hover > ul {
     display:block;/*display submenu on hover of li element*/
 }
-> ul::after {
+ ul::after {
     content: "";
     display:block;
     clear:both;

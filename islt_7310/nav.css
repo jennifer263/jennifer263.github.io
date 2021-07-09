@@ -1,3 +1,7 @@
+#hamburger {
+    display:none;
+}
+
 ul {
    background-color: maroon;
    color: white;
@@ -48,3 +52,23 @@ ul li:hover > ul {
     clear:both;
 }
 
+#container {
+    width:960px;
+    margin:0px auto;
+
+}
+@media screen and (max-width:959px){
+    #container {
+        width:100%;
+    }
+    ul {
+        width: 100%;
+    }
+    ul li {
+        width: 20%;
+    }
+    ul a {
+        font-size: 0.35em;
+    }
+
+}

@@ -37,12 +37,22 @@ main {
     
 }
 
-@media (max-width: 960px) 
-     { 
-
-
+@media screen and (max-width: 959px) {
+    main {
+        display:inline;
+        width: 100%;
+        
+    }
+    footer {
+        width: 100%;
+    }
+    .paragraph {
+        text-align: center;
+    }
     
 }
+    
+
 @media (max-width: 759px) 
      { 
     
@@ -57,5 +67,5 @@ main {
 
 @media (max-width: 250px) {
 
-    
+
 }

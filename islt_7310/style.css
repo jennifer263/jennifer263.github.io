@@ -12,7 +12,7 @@ main {
     display: flex;
     flex-direction: row;
     border:  none; /*remove for class requirement. But I like the feature and makes it easy for movement*/
-    width: 800px;
+    width: 110%;
     margin: 20px;
     padding: 10px;
     flex-direction: row;
@@ -30,7 +30,7 @@ div {background-color: beige;
 }
 section {background-color:beige;}
 main {
-    display:grid;
+    display:flex;
     grid-template: 500px  500px / 500px 500px 500px;
     grid-gap: 15px 20px;
     flex-direction: row;

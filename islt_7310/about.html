@@ -4,29 +4,36 @@
     <!--Hello Code Buddies.  I am learning lots.-->
                <meta charset="utf-8">
                <meta name="viewport" content="width=device-width, initial scale 1">
+            
                <title>Educator Credentials</title>
                <link rel="stylesheet" href="style.css">
                <link rel="stylesheet" href="nav.css">
+               <link href="hamburgermenu.css" rel="stylesheet">
 </head>
 
-<nav>
+<nav id="hamnav">
 
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">Educator Credentials</a></li>
-        <li><a href="reflection.html">Resources/References</a></li>
-        <li><a href="#contact.html">Contact</a></li>
-        <li class="lastitem"><a href="#learn.html">Learn</a>
-            <ul>
-               <li><a href="#">Link 1</a></li>
-               <li><a href="#">Link 2</a></li>
-               <li><a href="#">Link 3</a></li>
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger"/>
+    <div id="hamitems">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Educator Credentials</a></li>
+            <li><a href="reference.html">References</a></li>
+            <li><a href="#contact.html">Contact</a></li>
+            <li class="lastitem"><a href="#learn.html">Learn</a>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
             
-            </ul>
+                </ul>
             </li>
     </ul>
+</div>
     
 </nav>
+
 <header>
     <h1>Mrs. Walkup's Educator Credentials</h1>
   </header>
@@ -45,7 +52,7 @@
             <div>Div 2
                 <aside>
                     <img src="./professionalpic.png" alt="Professional Picture">
-                    </aside>
+                </aside>
 
             </div> 
         

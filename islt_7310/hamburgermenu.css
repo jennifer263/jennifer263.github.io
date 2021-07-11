@@ -1,0 +1,51 @@
+#hamnav {
+    width:100%;
+    background-color:maroon;
+    position: sticky;
+    top: 0;
+}
+
+/*horizontal menu items*/
+li {display: inline;
+    text-align:center;
+    padding: 10px 10px 10px 10px;
+}
+
+#hamitems {display:flex;}
+#hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+#hamitems a:hover {background: grey;}
+
+/*hides hamburger*/
+#hamnav label, #hamburger { display: none; }
+
+/*small screens*/
+@media screen and (max-width: 768px){
+    /*break into vertical menu*/
+    #hamitems a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-top: 1px solid black;
+    }
+}
+/*show hamburger icon*/
+#hamnav label {
+    display:inline-block;
+    color: white;
+    background: grey;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+/*toggle to show or hide menu*/
+#hamitems {display: none; }
+#hamnav input:checked ~ #hamitems {display: block; }

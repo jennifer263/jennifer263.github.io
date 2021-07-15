@@ -1,3 +1,17 @@
+
+
+
+body {
+    font-family: jost;
+}
+
+@font-face {
+    font-family: jost;
+
+    src: url("./Jost-VariableFont_wght.ttf");
+}
+
+
 .paragraph {color:#3300ff}
 main p:first-of-type:first-letter { font-size: 300%;}
 main p:first-of-type {text-indent: 2em;}
@@ -12,7 +26,7 @@ main {
     display: flex;
     flex-direction: row;
     border:  none; /*remove for class requirement. But I like the feature and makes it easy for movement*/
-    width: 110%;
+    width: 95%;
     margin: 20px;
     padding: 10px;
     flex-direction: row;
@@ -37,10 +51,10 @@ main {
     
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 100%) {
     main {
         display:inline;
-        width: 100%;
+        max-width: 100%;
         
     }
     footer {
@@ -68,4 +82,31 @@ main {
 @media (max-width: 250px) {
 
 
+}
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+        font-family:serif !important;
+    
+
+    }
+    .main-nav {
+        display: none;
+    }
+    a[href^="http:"]::after {
+        content:"["attr(href)"]";
+        color:blue;
+    }
+    
+    @page {
+        margin: 1in;
+    }
+    h1, ul {
+        font-family: jost !important;
+        src: url("./Jost-VariableFont_wght.ttf") !important;
+    }
 }

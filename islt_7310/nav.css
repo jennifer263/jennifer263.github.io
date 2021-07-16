@@ -1,7 +1,7 @@
 
 
 
-ul {
+.navbar {
    background-color: maroon;
    color: white;
    list-style: none; /*remove bullets from all ul elements*/
@@ -16,7 +16,7 @@ ul {
 
   
 }
-ul li {
+.navbar li {
     display: inline-block;
     padding: 0 25px 0 25px;
     text-decoration: none;
@@ -25,12 +25,12 @@ ul li {
     position: relative;
     font-size: 20px;
 }
-ul li a {
+.navbar li a {
     text-decoration: none;
     color: white;
 }
 
-ul ul {
+.navbar ul {
     display: none;/*does not display submenu until hover*/
     position:absolute;
     top: 100%;/*positions submenu at bottom of main menu*/
@@ -41,11 +41,11 @@ ul ul {
     background-color: silver;
 }
 
-ul ul li {float:none}/*display submenu vertically*/
-ul li:hover > ul {
+.navbar ul li {float:none}/*display submenu vertically*/
+.navbar li:hover > ul {
     display:block;/*display submenu on hover of li element*/
 }
- ul::after {
+ .navbar::after {
     content: "";
     display:block;
     clear:both;

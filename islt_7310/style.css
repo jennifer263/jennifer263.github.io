@@ -11,6 +11,9 @@ body {
     src: url("./Jost-VariableFont_wght.ttf");
 }
 
+footer {
+    background-image: url("image/paper-1074131_1920.jpg");
+}
 
 .paragraph {color:#3300ff}
 main p:first-of-type:first-letter { font-size: 300%;}

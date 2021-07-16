@@ -15,6 +15,15 @@ footer {
     background-image: url("paper-1074131_1920.jpg");
 }
 
+.email:hover i{
+    transition: transform .1s ease-out;
+    transform:scale(1.5);
+}
+.phone:hover i{
+    transition: transform .1s ease-out;
+    transform:scale(1.5);
+}
+
 .paragraph {color:#3300ff}
 main p:first-of-type:first-letter { font-size: 300%;}
 main p:first-of-type {text-indent: 2em;}

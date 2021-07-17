@@ -1,0 +1,156 @@
+
+ol li {
+    text-align: left;
+    list-style-type: decimal;
+    display: list-item;
+}
+
+body {
+    font-family: jost;
+}
+
+
+.contact-hours {
+    margin-left:  40px;
+}
+
+.contact-header {
+    width: 100%;
+
+}
+
+@font-face {
+    font-family: jost;
+
+    src: url("./Jost-VariableFont_wght.ttf");
+}
+
+footer {
+    background-image: url("paper-1074131_1920.jpg");
+}
+
+.email:hover i{
+    transition: transform .1s ease-out;
+    transform:scale(1.5);
+}
+.phone:hover i{
+    transition: transform .1s ease-out;
+    transform:scale(1.5);
+}
+
+.paragraph {color:#3300ff}
+main p:first-of-type:first-letter { font-size: 300%;}
+main p:first-of-type {text-indent: 2em;}
+footer p {
+    text-align: center;
+    background-color:beige;
+    height: 40px;
+
+    
+}
+main {
+    display: flex;
+    flex-direction: row;
+    border:  none; /*remove for class requirement. But I like the feature and makes it easy for movement*/
+    width: 95%;
+    margin: 20px;
+    padding: 10px;
+    flex-direction: row;
+    list-style-position: inside;
+ 
+
+}
+
+aside img {
+    max-height: max-content;
+
+} 
+
+div {background-color: beige;
+    
+}
+section {
+    background-color:beige;
+}
+
+
+main {
+    display:flex;
+    grid-template: 500px  500px / 500px 500px 500px;
+    grid-gap: 15px 20px;
+    flex-direction: row;
+    
+}
+
+@media screen and (max-width: 959px) {
+    main {
+        display:inline;
+        max-width: 100%;
+        
+    }
+    footer {
+        width: 100%;
+    }
+    .paragraph {
+        text-align: center;
+    }
+    
+}
+    
+
+@media (max-width: 759px) { 
+    footer ul li{
+        display: block;
+    }
+    main {
+        display: inline-block;
+    }
+    .prof-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    section iframe {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 500px)
+    { 
+
+
+}
+
+@media (max-width: 250px) {
+
+
+}
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+        font-family:serif !important;
+    
+
+    }
+    .main-nav {
+        display: none;
+    }
+    a[href^="http:"]::after {
+        content:"["attr(href)"]";
+        color:blue;
+    }
+    
+    @page {
+        margin: 1in;
+    }
+    h1, ul {
+        font-family: jost !important;
+        src: url("./Jost-VariableFont_wght.ttf") !important;
+    }
+}

@@ -1,8 +1,22 @@
 
-
+ol li {
+    text-align: left;
+    list-style-type: decimal;
+    display: list-item;
+}
 
 body {
     font-family: jost;
+}
+
+
+.contact-hours {
+    margin-left:  40px;
+}
+
+.contact-header {
+    width: 100%;
+
 }
 
 @font-face {
@@ -42,6 +56,7 @@ main {
     margin: 20px;
     padding: 10px;
     flex-direction: row;
+    list-style-position: inside;
  
 
 }
@@ -54,7 +69,11 @@ aside img {
 div {background-color: beige;
     
 }
-section {background-color:beige;}
+section {
+    background-color:beige;
+}
+
+
 main {
     display:flex;
     grid-template: 500px  500px / 500px 500px 500px;
@@ -79,9 +98,22 @@ main {
 }
     
 
-@media (max-width: 759px) 
-     { 
-    
+@media (max-width: 759px) { 
+    footer ul li{
+        display: block;
+    }
+    main {
+        display: inline-block;
+    }
+    .prof-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    section iframe {
+        width: 100%;
+    }
 
 }
 

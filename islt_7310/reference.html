@@ -7,6 +7,8 @@
                <link rel="stylesheet" href="style.css">
                <link rel="stylesheet" href="nav.css">
                <link href="hamburgermenu.css" rel="stylesheet">
+               <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+               <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
 </head>
 <body>
     <nav id="hamnav">
@@ -14,11 +16,11 @@
         <label for="hamburger">&#9776;</label>
         <input type="checkbox" id="hamburger"/>
         <div id="hamitems">
-            <ul>
+            <ul class="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">Educator Credentials</a></li>
                 <li><a href="reference.html">References</a></li>
-                <li><a href="#contact.html">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li class="lastitem"><a href="#learn.html">Learn</a>
                     <ul>
                         <li><a href="#">Link 1</a></li>
@@ -33,7 +35,7 @@
     </nav>
     
     <header>
-        <h1 >Resources</h1>
+        <h1>Resources</h1>
     </header>
     <main>
         <h2>Work Cited</h2>    
@@ -51,7 +53,13 @@
                 
     </main>
     <footer>
-        <p>&copy; Copyright 2021 Mrs. Walkup's American History. jlspp9@umsystem.edu</p>
+        <p><a href="Resume.pdf">Resume</a></p>
+        <ul>  
+          <li class="email"><i class="fas fa-envelope"></i> <a href="mailto:jlspp9@umsystem.edu">Jennifer: jlspp9@umsystem.edu</a></li>
+          <li class="phone"><i class="fas fa-phone-square"></i> 999-999-9999</li>
+        </ul>
+          <p>&copy; Copyright 2021 Mrs. Walkup's American History.</p>
+    
     </footer>
 </body>
 </html>

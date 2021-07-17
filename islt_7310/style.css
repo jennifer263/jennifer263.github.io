@@ -82,7 +82,7 @@ main {
     
 }
 
-@media screen and (max-width: 100%) {
+@media screen and (max-width: 959px) {
     main {
         display:inline;
         max-width: 100%;

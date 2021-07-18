@@ -94,7 +94,10 @@ main {
     .paragraph {
         text-align: center;
     }
-    
+    iframe {
+        width: 100%;
+        height: auto;
+    }
 }
     
 

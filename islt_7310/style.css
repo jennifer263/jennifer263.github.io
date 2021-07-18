@@ -151,6 +151,6 @@ main {
     }
     h1, ul {
         font-family: jost !important;
-        src: url("./Jost-VariableFont_wght.ttf") !important;
+        
     }
 }

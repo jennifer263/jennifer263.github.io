@@ -8,7 +8,9 @@ ol li {
 body {
     font-family: jost;
 }
-
+.contact-form {
+    width: 100%;
+}
 
 .contact-hours {
     margin-left:  40px;

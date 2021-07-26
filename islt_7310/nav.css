@@ -1,6 +1,5 @@
 
 
-
 .navbar {
    background-color: maroon;
    color: white;
@@ -12,10 +11,10 @@
    height: 60px;
    display:flex;
    align-items: center;
-
-
+    width: 100%;
   
 }
+
 .navbar li {
     display: inline-block;
     padding: 0 25px 0 25px;

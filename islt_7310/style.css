@@ -4,7 +4,12 @@ ol li {
     list-style-type: decimal;
     display: list-item;
 }
-
+table {width:100%}
+aside img {
+    width: 100%;
+    min-width: 200px;
+    height:auto;
+}
 body {
     font-family: jost;
 }
@@ -21,7 +26,16 @@ thead tr {
 tbody tr:nth-child(odd) {
     background-color: lightgray;
 }
-
+section h2 {
+    text-align: center;
+}
+.contact-form {
+    width: 100%;
+}
+section a {
+    text-indent: 30px;
+    margin-left: -10px;
+}
 .contact-hours {
     margin-left:  40px;
 }
